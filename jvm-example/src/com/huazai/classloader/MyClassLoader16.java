@@ -16,6 +16,15 @@ public class MyClassLoader16 extends ClassLoader {
     private final String fileExtension = ".class";
 
     /**
+     * 将自定义类加载器时，此构造函数是必须的
+     *
+     * @param parent
+     */
+    /*public MyClassLoader16(ClassLoader parent) {
+        super(parent);
+    }*/
+
+    /**
      * 将系统（应用）加载器作为该加载器的父加载器
      *
      * @param classLoaderName
