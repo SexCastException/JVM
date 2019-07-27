@@ -20,9 +20,9 @@ public class MyClassLoader16 extends ClassLoader {
      *
      * @param parent
      */
-    /*public MyClassLoader16(ClassLoader parent) {
+    public MyClassLoader16(ClassLoader parent) {
         super(parent);
-    }*/
+    }
 
     /**
      * 将系统（应用）加载器作为该加载器的父加载器
