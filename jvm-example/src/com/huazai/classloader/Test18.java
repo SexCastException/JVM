@@ -6,8 +6,9 @@ import sun.misc.Launcher;
  * 在运行期，-个Java类是由该类的完全限定名(binary name,二进制名)和用于加载该类的定义类加载器(defining loader) 所共同决定的。
  * 如果同样名字(即相同的完全限定名)的类是由两个不同的加载器所加载，那么这些类就是不同的，即便.class文件的字节码完全一样， 并且从相同的
  * 位置加载亦如此。
+ *
+ * 更多信息阅读Launcher（特别是构造函数源码）源码以及ClassLoader源码（特别是getSystemClassLoader方法）
  */
-
 
 public class Test18 {
     /**
