@@ -14,8 +14,18 @@ public class Test5 {
 
 interface MyParent5 {
     public static final int a = 5;
+    public static Thread thread = new Thread() {
+        {
+            System.out.println("MyParent5 invoke");
+        }
+    };
 }
 
 interface MyChild5 extends MyParent5 {
     public static final int b = new Random().nextInt(10);
+    public static Thread thread = new Thread() {
+        {
+            System.out.println("MyChild5 invoke");
+        }
+    };
 }

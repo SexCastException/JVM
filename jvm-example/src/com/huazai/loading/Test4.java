@@ -14,23 +14,22 @@ public class Test4 {
     public static void main(String[] args) {
 //        System.out.println(new MyParent4());
         MyParent4[] myParent4s = new MyParent4[12];
+        System.out.println(MyParent4.class);
         System.out.println(myParent4s.getClass());
         System.out.println(myParent4s.getClass().getSuperclass());
-
+        System.out.println("------------");
         MyParent4[][] myParent4s1 = new MyParent4[5][5];
         System.out.println(myParent4s1.getClass());
         System.out.println(myParent4s1.getClass().getSuperclass());
-
+        System.out.println("------------");
         char[] chars = new char[1];
         System.out.println(chars.getClass());
         System.out.println(chars.getClass().getSuperclass());
-
+        System.out.println("-------------");
         Character[] characters = new Character[1];
         System.out.println(characters.getClass());
         System.out.println(characters.getClass().getSuperclass());
     }
-
-
 }
 
 class MyParent4 {

@@ -8,6 +8,7 @@ import java.util.UUID;
  */
 public class Test3 {
     public static void main(String[] args) {
+//        System.out.println(MyParent3.s1);
         System.out.println(MyParent3.s);
     }
 }
@@ -15,6 +16,7 @@ public class Test3 {
 class MyParent3 {
 
     public static final String s = UUID.randomUUID().toString();
+    public static final String s1 = "s1";
 
     static {
         System.out.println("MyParent3 static block");

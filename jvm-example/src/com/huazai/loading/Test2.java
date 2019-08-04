@@ -1,8 +1,5 @@
 package com.huazai.loading;
 
-import java.util.Random;
-import java.util.UUID;
-
 /**
  * 常量在编译阶段会存入到调用这个常量的方法所在的类的常量池中。
  * 本质上，调用类并没有直接引用到定义常量的类，因此并不会触发定义常量的类的初始化
@@ -21,12 +18,17 @@ public class Test2 {
         System.out.println("test2");
     }
 
+    /**
+     * 通过虚拟机参数TraceClassLoading可以知道，调用类以及子类的静态常量，虚拟机不认为该类将要被使用，所以并没有预先加载。
+     *
+     * @param args
+     */
     public static void main(String[] args) {
 //        System.out.println(MyParent2.str);
 //        System.out.println(MyParent2.s);
 //        System.out.println(MyParent2.i);
 
-        System.out.println(MyChild2.str1);
+        System.out.println(MyChild2.str);
     }
 }
 
@@ -40,7 +42,7 @@ class MyParent2 {
     }
 }
 
-class MyChild2 extends MyParent2{
+class MyChild2 extends MyParent2 {
     public static final String str1 = "child2 class";
 
     static {
