@@ -9,6 +9,8 @@ import java.util.ServiceLoader;
  */
 public class Test26 {
     public static void main(String[] args) {
+//        Thread.currentThread().setContextClassLoader(MyClassLoader16.class.getClassLoader().getParent());
+
         // 重点查看方法以及相关的一系列相关源码
         ServiceLoader<Driver> serviceLoader = ServiceLoader.load(Driver.class);
         Iterator<Driver> iterator = serviceLoader.iterator();
