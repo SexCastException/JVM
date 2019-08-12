@@ -36,7 +36,7 @@ package com.huazai.bytecode;
  * 魔数（magic number，4个字节）-》次版本号（minor_version，2个字节）-》主版本号（major_version，2个字节）-》常量池数量（constant_pool_count，2个字节）-》
  * 常量池数组表（cp_info，n个字节）-》类的访问控制权限（access_flags，2个字节）-》当前类完全限定名(this_class，2个字节）-》
  * 父类完全限定名(super_class，2个字节）-》接口个数（interfaces_count，2个字节）-》接口名（interfaces，n个字节）-》字段个数（fields_count，2个字节）-》
- * 字段表（field_info，n个字节）-》方法个数（methods_count，2个字节）-》方法表（method_info，n个字节，注：attribute_info的attribute_length表示attribute所包含的字节数，不包含code的attribute_name_index和attribute_length字段）-》
+ * 字段表（field_info，n个字节）-》方法个数（methods_count，2个字节）-》方法表（method_info，n个字节，注：attribute_length表示attribute所包含的字节数，不包含attribute_name_index和attribute_length字段）-》
  * 附加属性的个数（attributes_count，2个字节)-》附加属性表（attribute_info，n个字节）
  */
 public class Test1 {
