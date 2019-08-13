@@ -23,7 +23,6 @@ public class Test3 {
     public void test() throws FileNotFoundException,IOException,NullPointerException{
         try {
             InputStream in = new FileInputStream("不存在的文件路径");
-
             ServerSocket serverSocket = new ServerSocket(8888);
             serverSocket.accept();
         } catch (FileNotFoundException e) {
