@@ -1,5 +1,8 @@
 package com.huazai.loading;
 
+/*
+    重点难点
+ */
 public class Test6 {
     public static void main(String[] args) {
         Singleton instance = Singleton.getInstance();
@@ -8,6 +11,9 @@ public class Test6 {
     }
 }
 
+/**
+ * 对于类的静态变量，先按顺序从上至下在连接阶段赋默认值，然后在初始化阶段从上至下赋初始值。
+ */
 class Singleton {
     public static int count1 /*= 1*/;
 

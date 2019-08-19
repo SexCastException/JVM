@@ -18,10 +18,9 @@ public class Test2 {
         System.out.println("test2");
     }
 
-    /**
-     * 通过虚拟机参数TraceClassLoading可以知道，调用类以及子类的静态常量，虚拟机不认为该类将要被使用，所以并没有预先加载。
-     *
-     * @param args
+    /*
+        通过虚拟机参数TraceClassLoading可以知道，调用类以及子类的静态常量，虚拟机不认为该类将要被使用，所以并没有预先加载。
+        既然没有预先加载，即使使用了该类的静态常量，在删除该类的class文件程序运行也不会报错。
      */
     public static void main(String[] args) {
 //        System.out.println(MyParent2.str);
