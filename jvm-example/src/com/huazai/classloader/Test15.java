@@ -13,6 +13,7 @@ public class Test15 {
         System.out.println("---------------");
 
 
+        // 易忘
         int[] ints = new int[1];
         System.out.println(ints.getClass());
         // 如果元素类型是原始类型，则数组类没有类加载器，此处的null说明没有类加载器

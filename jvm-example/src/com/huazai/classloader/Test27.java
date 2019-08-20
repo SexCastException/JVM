@@ -27,6 +27,9 @@ import java.sql.DriverManager;
  */
 
 public class Test27 {
+    /*
+        深入数据库驱动加载源码了解SPI机制
+     */
     public static void main(String[] args) throws Exception {
 //        Class.forName("com.mysql.jdbc.Driver");
         // 模拟数据库连接

@@ -6,7 +6,9 @@ package com.huazai.classloader;
  *  try {
  *      Thread. currentThread( ) . setContextClassLoader (targetTccl);
  *      myMethod();
- *  } finally {
+ *  } catch(e) {
+ *
+ *  }finally {
  *      Thread.currentThread().setContextClassLoader(classLoader);
  *   }
  * myMethod里面则调用了Thread.currentThread().getContextClassLoader(),获取当前线程的上下文类加载器做某些事情。
