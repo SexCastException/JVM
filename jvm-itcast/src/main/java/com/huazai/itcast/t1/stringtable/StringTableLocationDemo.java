@@ -24,7 +24,7 @@ public class StringTableLocationDemo {
         List<String> list = new ArrayList<String>();
         int i = 0;
         try {
-            for (int j = 0; j < 2600000; j++) {
+            for (int j = 0; j < 260000000; j++) {
                 list.add(String.valueOf(j).intern());
                 i++;
             }
