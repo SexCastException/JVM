@@ -52,8 +52,8 @@ public class WeakReferenceDemo {
         }
         System.out.println("======================================手动gc=====================================");
         // 如果手动调用gc之后，不等待一下，被移除的弱引用另外的线程还没来的急放入到引用队列，导致引用队列没有数据，但是遍历弱引用所关联的对象为null，奇葩
-        // 所以使用弱引用不建议手动调用gc来达到回收弱引用关联对象的效果
-        System.gc();
+        // 所以使用弱引用不建议手动调用gc来达到回收弱引用关联对象的效果，最好设置合适的堆内存让jvm自动触发gc来回收
+//        System.gc();
         TimeUnit.SECONDS.sleep(1);
         System.out.println("========================从队列中获取无用的 弱引用对象，并移除=========================");
         Reference<? extends byte[]> reference = referenceQueue.poll();
