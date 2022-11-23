@@ -123,6 +123,7 @@ public class DirectMemoryDemo1 {
 
     /**
      * 禁用显示的gc调用参数：-XX:+DisableExplicitGC
+     * 禁用显示调用gc功能之后，System.gc();代码将失效，则虚引用需要等待jvm自动回收回收后才能触发直接内存的会后
      *
      * @throws IOException
      */
